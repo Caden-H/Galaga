@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaga by Caden Harris and Kollin Murphy</title>
+    <style>
+      canvas {
+        image-rendering: crisp-edges;
+      }
+      @font-face {
+        font-family: "Emulogic";
+        src: url("/assets/fonts/Emulogic.ttf");
+      }
+    </style>
+  </head>
+  <body class='bg-black'>
+    <img src="/assets/img/bg1.jpg" alt="" class='h-[100vh] w-[50vw] object-cover absolute top-0 left-0 opacity-50' />
+    <img src="/assets/img/bg2.jpg" alt="" class='h-[100vh] w-[50vw] object-cover absolute top-0 right-0 opacity-50' />
+    <div class='absolute left-[50%] translate-x-[-50%] top-0 h-[100vh] z-50'>
+      <canvas id="canvas-game" class='h-full' width="768" height="1024"></canvas>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
