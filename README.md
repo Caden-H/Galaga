@@ -17,4 +17,4 @@ This project is a recreation of the classic arcade game Galaga. The player contr
 
 ### Technical Description
 
-This project was created using React and JavaScript. The game was created using the React Hooks API. The game uses a canvas element to display the game. The canvas is a 2D element, so the game is displayed in 2D. The game also uses the React Context API to share state between multiple components. The game uses the React Router API to navigate between pages. The game uses the React Spring API to animate the game.
+This project was created using React and JavaScript. The game uses a canvas element to display the game. The canvas is a 2D element, so the game is displayed in 2D.
