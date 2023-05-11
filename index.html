@@ -6,13 +6,84 @@
     <title>Galaga by Caden Harris and Kollin Murphy</title>
     <style>
       canvas {
+        image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
       }
       @font-face {
         font-family: "Emulogic";
         src: url("/assets/fonts/Emulogic.ttf");
       }
+      
+      .github-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Emulogic";
+  font-size: 18px;
+  font-weight: bold;
+  color: #fbfbfb;
+  text-decoration: none;
+  background-color: #161616;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 18px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: background-color 0.3s ease, padding 0.3s ease; /* Added padding transition */
+  z-index: 1000;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 8px;
+  overflow: hidden; /* Hide overflow for animation */
+}
+
+.github-button i {
+  margin-right: 10px;
+}
+
+.github-button .button-text {
+  display: none; /* Hide the text by default */
+  animation: expand-text 0.3s ease forwards; /* Added animation */
+}
+
+.github-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease; /* Added width transition */
+}
+
+.github-button:hover::before {
+  width: 100%; /* Expand the background width */
+}
+
+.github-button:hover .button-text {
+  display: inline-block; /* Display the text on hover */
+  animation: expand-text 0.3s ease forwards;
+}
+
+@keyframes expand-text {
+  0% {
+    
+    /* grow from left  */
+    transform: translateY(-10%); 
+    opacity: 0;
+
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
     </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class='bg-black'>
     <img src="/assets/img/bg1.jpg" alt="" class='h-[100vh] w-[50vw] object-cover absolute top-0 left-0 opacity-50' />
@@ -21,5 +92,12 @@
       <canvas id="canvas-game" class='h-full' width="768" height="1024"></canvas>
     </div>
     <script type="module" src="/src/index.ts"></script>
+    <div>
+      <a href="https://github.com/Caden-H/Galaga" class="github-button">
+        <i class="fa fa-github" style="font-size: 27px"></i>
+        <span class="button-text">View on GitHub</span>
+      </a>
+    </div>
+    
   </body>
 </html>
