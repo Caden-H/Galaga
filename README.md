@@ -1,5 +1,7 @@
 # Galaga Project
 
+[Play Online!](https://galaga.ccaden.me/)
+
 By Caden Harris and Kollin Murphy
 
 ## Instructions to Run
