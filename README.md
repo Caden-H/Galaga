@@ -19,4 +19,4 @@ This project is a recreation of the classic arcade game Galaga. The player contr
 
 ### Technical Description
 
-This project was created using React and JavaScript. The game uses a canvas element to display the game. The canvas is a 2D element, so the game is displayed in 2D.
+This project was created using React and TypeScript. The game uses a canvas element to display the game. The canvas is a 2D element, so the game is displayed in 2D.
